@@ -8,7 +8,7 @@
 
 ## Commands to run and test this on your machine
 ```
-git clone https://github.com/RudrakshNanavaty/SJF
+git clone https://github.com/Prayag2003/OS_Project_Landing_Page
 cd SJF
 npm i
 npm run dev
