@@ -6,15 +6,19 @@ const ProjectCard = props => {
 	return (
 		<Card
 			sx={{
+				height: '350px',
 				p: '12px',
-				'&:hover': {
-					backgroundColor: 'primary.dark',
-					boxShadow: '0 0 5px red, 0 0 5px red'
+				alignItems: 'center',
+				'&:hover':
+				{
+					transitionDuration: '0.4s',
+					backgroundColor: '#f50057',
+					boxShadow: '0 0 5px white, 0 0 5px white'
 				}
 			}}
 		>
 			{project}
-		</Card>
+		</Card >
 	);
 };
 

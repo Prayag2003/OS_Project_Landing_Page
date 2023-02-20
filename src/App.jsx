@@ -8,6 +8,7 @@ import AppLayout from './AppLayout';
 function App() {
 	return (
 		<ThemeProvider theme={createTheme(assets.theme)}>
+
 			<CssBaseline />
 			<AppLayout />
 		</ThemeProvider>
