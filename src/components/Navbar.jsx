@@ -6,10 +6,11 @@ const Navbar = () => {
 	// const projectLinks = [];
 
 	return (
-		<AppBar position='static'>
+		<AppBar position='static' >
 			<Toolbar>
 				<Box
 					sx={{
+
 						width: '100vw',
 						display: 'flex',
 						alignItems: 'center',
@@ -47,7 +48,7 @@ const Navbar = () => {
 					</Box>
 				</Box>
 			</Toolbar>
-		</AppBar>
+		</AppBar >
 	);
 };
 
