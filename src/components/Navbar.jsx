@@ -1,23 +1,36 @@
 // MUI
-import { AppBar, Toolbar, Box, IconButton, Button } from '@mui/material';
+import {
+	AppBar,
+	Toolbar,
+	Box,
+	IconButton,
+	Button,
+	Typography
+} from '@mui/material';
 
 const Navbar = () => {
 	const navItems = ['Projects', 'About Us'];
-	// const projectLinks = [];
 
 	return (
-		<AppBar position='static' >
+		<AppBar position='static'>
 			<Toolbar>
 				<Box
 					sx={{
-
-						width: '100vw',
+						width: '100%',
 						display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'space-between'
 					}}
 				>
-					<Box>
+					{/* Logo and Title */}
+					<Box
+						sx={{
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center'
+						}}
+					>
+						{/* Logo */}
 						<IconButton
 							href='/'
 							sx={{
@@ -28,12 +41,18 @@ const Navbar = () => {
 						>
 							<img src='logo.png' width='48px' />
 						</IconButton>
+
+						{/* Title */}
+						<Typography variant='h5'>OS Lab Projects</Typography>
 					</Box>
+
+					{/* Navigation Links */}
 					<Box>
 						{navItems.map(navItem => {
 							return (
 								<Button
 									href=''
+									key={`${navItem}`}
 									sx={{
 										mr: '12px',
 										'&:last-child': {
@@ -48,7 +67,7 @@ const Navbar = () => {
 					</Box>
 				</Box>
 			</Toolbar>
-		</AppBar >
+		</AppBar>
 	);
 };
 
